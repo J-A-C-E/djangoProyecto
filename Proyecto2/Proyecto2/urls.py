@@ -20,7 +20,7 @@ from Proyecto2App import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.inicio, name="Inicio"),
-    path('',views.servicio, name="Servicios"),
-    path('',views.noticia, name="Noticias"),
-    path('',views.contacto, name="Contacto"),
+    path('servicios',views.servicio, name="Servicios"),
+    path('noticias',views.noticia, name="Noticias"),
+    path('contacto',views.contacto, name="Contacto"),
 ]
