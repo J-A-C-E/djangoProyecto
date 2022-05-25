@@ -1,3 +1,4 @@
+from distutils.command import upload
 from mailbox import NoSuchMailboxError
 from tabnanny import verbose
 from django.db import models
@@ -6,7 +7,7 @@ from django.db import models
 class Servicio(models.Model):
     titulo = models.CharField(max_length=50) 
     contenido = models.CharField(max_length=50) 
-    imagen = models.ImageField()
+    imagen = models.ImageField(upload_to='servicios')
     created =  models.DateField(auto_now_add=True) 
     updated = models.DateField(auto_now_add=True)
 
