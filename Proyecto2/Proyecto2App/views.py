@@ -5,8 +5,6 @@ from django.shortcuts import render, HttpResponse
 def inicio(request):
     return render(request, "Proyecto2App/inicio.html")
 
-def noticia(request):
-    return render(request, "Proyecto2App/noticias.html")
 
 
 def contacto(request):
