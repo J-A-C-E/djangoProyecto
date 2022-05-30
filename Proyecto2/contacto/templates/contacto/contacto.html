@@ -1,9 +1,16 @@
 {% extends "Proyecto2App/base.html" %}
 {% load static %}
 {% block content %}
-    <div>
-        <p>
-            {{miFormulario}}
-        </p>
+    <div class="contenedorFormulario">
+        <form action="" method="post" style="text-align: center;">
+            {% csrf_token %}
+            <table style= "color: antiquewhite; margin: 20px auto;">
+                {{miFormulario.as_table}}
+            </table>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+        
     </div>
 {% endblock%}
