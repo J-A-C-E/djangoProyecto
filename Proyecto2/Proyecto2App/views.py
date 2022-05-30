@@ -7,6 +7,4 @@ def inicio(request):
 
 
 
-def contacto(request):
-    return render(request, "Proyecto2App/contacto.html")
-    
+
